@@ -8,11 +8,11 @@ import web.model.Car;
 import java.util.List;
 
 @Service
-public class InMemoryCarService implements CarService {
-    CarDao carDao;
+public class CarServiceImpl implements CarService {
+    private CarDao carDao;
 
     @Autowired
-    public InMemoryCarService(CarDao carDao) {
+    public CarServiceImpl(CarDao carDao) {
         this.carDao = carDao;
     }
 
